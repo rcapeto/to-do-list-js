@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Task List - RSC</title>
+        <link rel="stylesheet" href="./style.css"">
+    </head>
+    <body>
+        <header>
+            <h2>Task list</h2>
+            <ul class="nav">
+                <li><button type="button" id="btn-dark">Dark Mode</button></li>
+                <li><button type="button" id="btn-light">Light Mode</button></li>
+                <li><button type="button" onclick="window.location.href='https://www.instagram.com/raphacapeto/?hl=pt-br'">Contact</button></li>
+            </ul>
+        </header>
+        <section>
+            <div class="content">
+                <input type="text" id="input-new-task" placeholder="Type a new task...">
+                <button class="btn" id="btn-new-task">Add</button>
+            </div>
+            <div class="task-list">
+                <details>
+                    <summary>Tasks</summary>
+                    <div id="list-task">
+                    </div>
+                </details>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="form " id="form">
+                    <form method="GET">
+                        <h3>E-mail:</h3>
+                        <input type="email" name="email" id="input-email" placeholder="Type your e-mail">
+                        <h3>Message:</h3>
+                        <textarea 
+                            name="message" 
+                            placeholder="Type a new message..." 
+                            id="input-message" 
+                            cols="30" 
+                            rows="10"
+                        ></textarea>
+                        <br>
+                        <button id="btn-send-message" type="submit">Send Message</button>
+                    </form>
+                </div>
+                <h3>Copyright© , RSC- 2020</h3>
+                <button id="btn-form">Send suggestions</button> 
+            </div>
+        </footer>
+        <script src="./script2.js"></script>
+    </body>
+</html>

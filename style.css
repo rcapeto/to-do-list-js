@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+header{
+    background-color: #2f3640;
+    border-bottom: 2px solid #cecece;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 400px;
+    height: 100px;
+}
+header h2{
+    color: #cecece;
+    margin-left:4vw;
+    font-size: 30px;
+    transition: 1s;
+}
+header h2:hover{
+    font-size: 35px;
+    transition: 1s;
+    cursor: pointer;
+}
+.nav{
+    list-style: none;
+}
+
+.nav li{
+    display: inline-block;
+    margin-right: 4vw;
+    padding: 5px 30px;
+}
+
+.nav button{
+    background: none;
+    border: 2px solid #ee5253;
+    outline: none;
+    color: #cecece;
+    padding: 5px 20px;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+.nav button:hover{
+    cursor: pointer;
+    transition: 1s;
+    padding: 5px 30px;
+    background-color: #ee5253;
+}
+section{
+    width: 100%;
+    min-width: 400px;
+    min-height: 445px;
+    background-color: #c8d6e5;
+    position: relative;
+}
+section.dark-mode{
+    background-color: #2d3436;
+}
+section.dark-mode #btn-delete{
+    color: #cecece;
+}
+section.dark-mode #btn-delete:hover{
+    color: black;
+}
+section.dark-mode .content input{
+    border: 2px solid #ee5253;
+    color: #cecece;
+    transition: 1s;
+}
+section.dark-mode .content input:focus{
+    border-color: #ee5253;
+}
+section.dark-mode details{
+    color: #cecece;
+}
+section.dark-mode details summary{
+    font-weight: bold;
+    font-size: 20px;
+    outline: none;
+}
+section.dark-mode .task input{
+    background: none;
+}
+section .content{
+    padding: 2vw;
+    text-align: center;
+}
+section .content input{
+    background: none;
+    outline: none;
+    border: 2px solid  #2d3436;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: 1s;
+}
+section .content input:focus{
+    padding: 5px 20px;
+    border-color:#10ac84;
+}
+section .content button{
+    border: 2px solid #10ac84;
+    transition: 1s;
+    padding: 4px 8px;
+    background: none;
+    border-radius: 20px;
+    background-color: #1dd1a1;
+    color: white;
+}
+
+section .content button:hover{
+    cursor: pointer;
+    background-color: #10ac84;
+}   
+section details{
+    text-align: center;
+    outline: none;
+}
+
+section summary{
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+section details .task{
+    margin-top: 20px;
+}
+section details .task label{
+    padding: 2px 20px;
+}
+section details .task label:hover{
+    cursor: pointer;
+}
+section details .task label.complete{
+    text-decoration: line-through;
+    opacity: 0.7;
+    cursor:not-allowed;
+}
+#btn-delete{
+    border: 2px solid #d63031;
+    background: none;
+    padding: 0px 2px;
+    border-radius: 10px;
+    outline: none;
+    transition: 1s;
+}
+#btn-delete:hover{
+    transition: 1s;
+    background-color: #ee5253;
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    border-top:2px solid #cecece;
+    background-color:#2f3640;
+    position: relative;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3vh 20px;
+}
+.footer h3{
+    color: #cecece;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 10px 20px;
+    transition: 1s;
+    cursor:context-menu;
+}
+.footer h3:hover{
+    color: #ee5253;
+    font-size: 15px;
+    transition: 1s;
+}
+.footer button{
+    margin-top: 5px;
+    padding: 4px 20px;
+    border: 2px solid #ee5253;
+    outline: none;
+    background: none;
+    color: #cecece; 
+    border-radius: 18px;
+    transition: 1s;
+}
+.footer button:hover{
+    transition: 1s;
+    background-color: #ee5253;
+    color: white;
+    padding: 5px 30px;
+    cursor: pointer;
+
+}
+
+.form{
+    right: -30vw;
+    display: none;
+    transition: 10s;
+}
+
+.form.open{
+
+    position: absolute;
+    right: 0vw;
+    display: block;
+    top:-20vw;
+    background-color:  #2f3640;
+    width: 300px;
+    text-align: center;
+    padding: 20px 5px;
+    border-left: 2px solid  #cecece;
+    border-top: 2px solid  #cecece;
+    height: 346px;
+    transition: 10s;
+
+}
+.open h3{
+    font-weight: bold;
+    font-size: 15px;
+}
+.open textarea{
+    resize: none;
+    width: 150px;
+    height: 180px;
+    background-color: #2f3640;
+    color: #cecece;
+    outline: none;
+    border: 2px solid #ee5253;
+    transition: 1s;
+}
+.open textarea:focus{
+    width: 200px;
+    transition: 1s;
+}
+.open input{
+    background-color: transparent;
+    border: 2px solid #ee5253;
+    outline: none;
+    padding: 3px 6px;
+    color: #cecece;
+    border-radius: 12px;
+    transition: 1s;
+}
+.open input:focus{  
+    transition: 1s;
+    padding: 3px 30px;
+
+}
+/* dark mode --> #2d3436*/
+
+section.dark-mode #btn-edit{
+    color: white
+}
+section.dark-mode #btn-edit:hover{
+    color:black;
+}
+#btn-edit{
+    background: none;
+    border: 2px solid #2980b9;
+    outline: none;
+    color: black;
+    padding: 0px 2px ;
+    border-radius: 12px;
+    transition: 1s;
+
+}
+
+#btn-edit:hover{
+    transition:1s;
+    color: white;
+    cursor: pointer;
+    background-color: #3498db;
+}
